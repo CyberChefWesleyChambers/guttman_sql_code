@@ -119,6 +119,7 @@ IF NOT EXISTS soldvia (           productid    CHAR(3) NOT NULL,
                                              FOREIGN KEY (tid)
                                              REFERENCES salestransaction(tid)
 );
+-- 
 SHOW CREATE TABLE soldvia \G
 
 SELECT '' AS 'INSERTING VALUES INTO TABLE' \G
